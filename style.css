@@ -1,0 +1,628 @@
+:root{
+    --barva: #F4C2C2;
+    --barva2: #fff0f5;
+    --barva-text: #333333;
+    --barva-zvyrazneni: #e60073; 
+}
+
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: var(--barva2);
+    color: var(--barva-text);
+    padding-top: 90px;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+.header {
+  display: flex;
+    gap: 4rem;
+  align-items: center;
+  padding: 0.1rem;
+  background-color: var(--barva);
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    background: rgba(244, 194, 194, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;  
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav{
+  display: flex;
+  gap: 4rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+a:hover{
+    transform: scale(1.1);
+    color: var(--barva-zvyrazneni);
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+a, button {
+  color: var(--barva-text);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.uvod{
+  background-image: url(images/uvodni1.JPEG);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--barva-zvyrazneni);
+}
+
+.uvod a{
+  top: 40%;
+  left: 65%;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #f4c2c2, #f8dada);
+  color: #333;
+  padding: 1.5rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.zacatek{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 7rem;
+}
+
+.zacatek-container{
+  display: flex;
+  padding: 4rem;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 4rem;
+}
+
+.zacatek-item{
+  padding: 6rem;
+  gap: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.zacatek-item:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 200px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+footer{
+  padding-top: 3rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.footer-container{
+  padding: 1rem;
+  margin: 0;
+}
+
+.footer-container-map{
+  padding: 1rem;
+  margin: 0;
+}
+
+.map-wrapper{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin: 0 auto;
+}
+
+.map-wrapper iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.kontakt-seznam{
+  list-style: none;
+  padding: 2rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about{
+  padding-top: 70px;
+}
+
+.about{
+  padding: 4rem 2rem;
+}
+
+.about{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.about-text{
+  flex: 1;
+}
+
+.about-text h2{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p{
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-containers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.about-container{
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.about-container:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.instruktori{
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem;
+}
+
+.instruktori h1{
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.instruktori-container{
+  max-width: 400px;
+  justify-self: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 2rem;
+}
+
+.instruktori-container:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.instruktori-fotky{
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sluzby{
+  padding-top: 70px;
+  padding: 5rem;
+}
+
+.sluzby{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sluzby-container{
+  width: 1200px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 2rem;
+}
+
+.sluzby-container:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.sluzby a{
+  top: 40%;
+  left: 65%;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #f4c2c2, #f8dada);
+  color: #333;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.galerie{
+  padding-top: 70px;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.gallery-container1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--barva);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+    .burger svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .burger {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+  body{
+    padding-top: 165px
+}
+
+  .zacatek{
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  .zacatek-container{
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .zacatek-item{
+    width: 100%;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .zacatek-item h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .zacatek-item p{
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+    letter-spacing: 0.01rem;
+  }
+
+  .sluzby{
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  .sluzby-container{
+    width: 90%;
+  }
+
+  .footer{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+   .footer-container{
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .footer-container{
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .kontakt-seznam{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  .map-wrapper{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    margin-top: 1.5rem;
+  }
+
+  .footer h2{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-containers{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .instruktori{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .instruktori-container{
+    max-width: 240px;
+  }
+
+  .instruktori-container img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .uvod{
+    font-size: 0.6rem;
+  }
+
+  .uvod a{
+    font-size: 0.6rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  html, body{
+    width: 100%;
+  }
+  
+  .zacatek-container{
+    gap: 2rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .zacatek-item{
+    padding: 2rem;
+  }
+
+  .instruktori{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .instruktori-container{
+    max-width: none;
+  }
+
+  .gallery-item{
+    width: 160px;
+  }
+
+  .footer{
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .map-wrapper{
+    max-width: 350px;
+  }
+
+  .sluzby{
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  .sluzby-container{
+    width: 90%;
+  }
+
+  .footer{
+    width: 100%;
+  }
+
+  .footer-container{
+    width: 50%;
+    text-align: left;
+  }
+
+.footer{
+    width: 100%;
+  }
+
+  .footer-container h2{
+    text-align: center;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--barva);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+    .burger svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .burger {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+  body{
+    padding-top: 165px
+}
+}

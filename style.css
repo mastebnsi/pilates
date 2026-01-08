@@ -77,7 +77,7 @@ a, button {
 }
 
 .uvod{
-  background-image: url(/images/uvodni1.JPEG);
+  background-image: url('images/uvodni1.JPEG');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -608,4 +608,5 @@ footer{
   body{
     padding-top: 165px
 }
+
 }

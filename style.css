@@ -470,6 +470,15 @@ footer{
     gap: 1rem;
   }
 
+    .kontakt-seznam li {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    width: 100%;
+    justify-content: center;
+  }
+    
   .map-wrapper{
     width: 100%;
     max-width: 100%;
@@ -628,3 +637,4 @@ footer{
 }
 
 }
+

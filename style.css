@@ -479,10 +479,9 @@ footer{
     justify-content: center;
   }
 
-    .kontakt-seznam li,
     .kontakt-seznam li a {
-        font-size: 0.9rem !important;
-        white-space: nowrap;
+        font-size: 0.9rem;
+        color: var(--barva-zvyrazneni)
     }
     
   .map-wrapper{
@@ -643,5 +642,6 @@ footer{
 }
 
 }
+
 
 

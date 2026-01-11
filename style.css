@@ -478,6 +478,12 @@ footer{
     width: 100%;
     justify-content: center;
   }
+
+    .kontakt-seznam li,
+    .kontakt-seznam li a {
+        font-size: 0.9rem !important;
+        white-space: nowrap;
+    }
     
   .map-wrapper{
     width: 100%;
@@ -637,4 +643,5 @@ footer{
 }
 
 }
+
 

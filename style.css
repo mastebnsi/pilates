@@ -346,6 +346,11 @@ footer{
   justify-content: center;
 }
 
+.aktuality{
+    display: flex;
+    gap: 2rem;
+}
+
 @media (max-width: 768px) {
   html, body {
     width: 100%;

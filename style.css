@@ -347,9 +347,19 @@ footer{
 }
 
 .aktuality{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
     gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.aktuality dt{
+  font-weight: 900;
+}
+
+.aktuality dd{
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
